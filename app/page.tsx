@@ -85,9 +85,9 @@ export default function Home() {
           />
         </div>
         <div className="hero-stats" aria-label="Practice highlights">
-          <div><strong>6+</strong><span>Years of experience</span></div>
-          <div><strong>100%</strong><span>Customized sessions</span></div>
-          <div><strong>Jupiter</strong><span>Florida</span></div>
+          <div><strong>60 &amp; 90</strong><span>Minute sessions</span></div>
+          <div><strong>2</strong><span>Focused services</span></div>
+          <div><strong>Personal</strong><span>Care tailored to you</span></div>
         </div>
       </section>
 
@@ -100,7 +100,7 @@ export default function Home() {
               Your session should do more than follow a routine. It should meet
               you where you are and support where you want to go.
             </p>
-            <p>
+            <p className="large-copy">
               At Jupiter Premier, thoughtful assessment and skilled therapeutic
               work come together in a calm, professional setting. Every session
               is shaped around your preferences, comfort, and goals.
@@ -180,23 +180,39 @@ export default function Home() {
       </section>
 
       <section className="about" id="about">
-        <div className="about-photo">
-          <img
-            src="/images/owner-headshot.png"
-            alt="Nick Sahf, Licensed Massage Therapist"
-            width="500"
-            height="375"
-            loading="lazy"
-          />
-          <div className="photo-label"><span>Meet your therapist</span><strong>Nick Sahf, LMT</strong></div>
-        </div>
-        <div className="about-copy">
-          <div className="section-kicker light"><span>06</span> About Nicholas</div>
+        <div className="team-heading">
+          <div className="section-kicker light"><span>06</span> Our team</div>
           <h2>Experience meets<br /><em>intention.</em></h2>
-          <p className="large-copy">Nick Sahf is a Licensed Massage Therapist with over six years of experience helping clients reduce pain, improve mobility, and feel their best through personalized therapeutic bodywork.</p>
-          <p>Specializing in neuromuscular therapy, sports massage, craniosacral therapy, and Esalen®-inspired massage, Nick takes a customized approach to every session based on each client’s unique needs and goals.</p>
-          <p>As a former gymnast and active grappling practitioner, Nick brings a deep understanding of movement, recovery, and athletic performance to his work.</p>
-          <a className="text-link gold" href={BOOKING_URL}>Work with Nick <span aria-hidden="true">→</span></a>
+          <p>Meet the people behind the personalized care at Jupiter Premier.</p>
+        </div>
+        <div className="team-grid">
+          <article className="team-card team-card-featured">
+            <div className="team-photo">
+              <img
+                src="/images/owner-headshot.png"
+                alt="Nick Sahf, Licensed Massage Therapist"
+                width="500"
+                height="375"
+                loading="lazy"
+              />
+            </div>
+            <div className="team-copy">
+              <p className="card-eyebrow">Licensed Massage Therapist</p>
+              <h3>Nick Sahf</h3>
+              <p>Nick has over six years of experience helping clients reduce pain, improve mobility, and feel their best through personalized therapeutic bodywork.</p>
+              <p>He specializes in neuromuscular therapy, sports massage, craniosacral therapy, and Esalen®-inspired massage. As a former gymnast and active grappling practitioner, he brings a deep understanding of movement, recovery, and athletic performance to every session.</p>
+              <a className="text-link gold" href={BOOKING_URL}>Work with Nick <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article className="team-card team-card-coming-soon">
+            <div className="team-placeholder" aria-hidden="true"><span>A</span></div>
+            <div className="team-copy">
+              <p className="card-eyebrow">Team member</p>
+              <h3>Amber</h3>
+              <p>Amber’s photo, biography, and services will be added soon.</p>
+              <span className="coming-soon-label">Profile coming soon</span>
+            </div>
+          </article>
         </div>
       </section>
 
