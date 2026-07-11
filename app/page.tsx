@@ -50,15 +50,17 @@ export default function Home() {
           <a href="#about">About</a>
           <a className="button button-small" href={BOOKING_URL}>Book Now</a>
         </nav>
-        <details className="mobile-nav">
-          <summary aria-label="Open navigation">Menu</summary>
-          <nav aria-label="Mobile navigation">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href={BOOKING_URL}>Book Now</a>
-          </nav>
-        </details>
+        <div className="mobile-actions">
+          <a className="mobile-book" href={BOOKING_URL}>Book Now</a>
+          <details className="mobile-nav">
+            <summary aria-label="Open navigation">Menu</summary>
+            <nav aria-label="Mobile navigation">
+              <a href="#home">Home</a>
+              <a href="#services">Services</a>
+              <a href="#about">About</a>
+            </nav>
+          </details>
+        </div>
       </header>
 
       <section className="hero" id="home">
@@ -207,10 +209,11 @@ export default function Home() {
           <article className="team-card team-card-coming-soon">
             <div className="team-placeholder" aria-hidden="true"><span>A</span></div>
             <div className="team-copy">
-              <p className="card-eyebrow">Team member</p>
+              <p className="card-eyebrow">Licensed Massage Therapist</p>
               <h3>Amber</h3>
-              <p>Amber’s photo, biography, and services will be added soon.</p>
-              <span className="coming-soon-label">Profile coming soon</span>
+              <p>With six years of experience as a Licensed Massage Therapist, Amber specializes in therapeutic and deep-tissue massage. Her expertise also includes cupping and prenatal massage, supporting a comprehensive approach to wellness.</p>
+              <p>Following a session with Amber, clients can expect to leave feeling revitalized and prepared for whatever lies ahead.</p>
+              <span className="coming-soon-label">Photo coming soon</span>
             </div>
           </article>
         </div>
