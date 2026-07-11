@@ -125,6 +125,8 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .team-copy > p:not(.card-eyebrow) { color: rgba(255,255,255,.62); }
 .team-copy .text-link { display: inline-block; margin-top: 18px; }
 .team-card-coming-soon { display: flex; flex-direction: column; min-height: 100%; }
+.team-photo-secondary { width: 170px; height: 170px; min-height: 0; flex: 0 0 auto; margin: 42px auto 0; }
+.team-photo-secondary img { object-position: 38% 34%; }
 .team-placeholder { min-height: 245px; display: grid; place-items: center; background: radial-gradient(circle at 50% 42%, rgba(135,191,195,.18), transparent 42%), var(--navy); border-bottom: 1px solid rgba(255,255,255,.12); }
 .team-placeholder span { width: 98px; height: 98px; display: grid; place-items: center; border: 1px solid rgba(196,154,75,.55); border-radius: 50%; color: var(--gold-light); font-family: var(--font-heading); font-size: 4rem; }
 .coming-soon-label { display: inline-block; margin-top: 20px; color: var(--gold-light); font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }

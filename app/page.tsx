@@ -207,13 +207,20 @@ export default function Home() {
             </div>
           </article>
           <article className="team-card team-card-coming-soon">
-            <div className="team-placeholder" aria-hidden="true"><span>A</span></div>
+            <div className="team-photo team-photo-secondary">
+              <img
+                src="/images/amber-womack.jpg"
+                alt="Amber Womack, Licensed Massage Therapist"
+                width="2316"
+                height="3088"
+                loading="lazy"
+              />
+            </div>
             <div className="team-copy">
               <p className="card-eyebrow">Licensed Massage Therapist</p>
-              <h3>Amber</h3>
+              <h3>Amber Womack</h3>
               <p>With six years of experience as a Licensed Massage Therapist, Amber specializes in therapeutic and deep-tissue massage. Her expertise also includes cupping and prenatal massage, supporting a comprehensive approach to wellness.</p>
               <p>Following a session with Amber, clients can expect to leave feeling revitalized and prepared for whatever lies ahead.</p>
-              <span className="coming-soon-label">Photo coming soon</span>
             </div>
           </article>
         </div>
