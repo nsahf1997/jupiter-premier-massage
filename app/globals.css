@@ -63,6 +63,8 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .purpose-grid > div:last-child { max-width: 620px; }
 .large-copy { font-family: var(--font-heading); font-size: clamp(1.55rem, 2.5vw, 2.25rem); line-height: 1.25; color: #17314c; }
 .purpose-grid .large-copy { color: #17314c; }
+.purpose .large-copy { color: rgba(255,255,255,.74); }
+.purpose h2 em { color: var(--gold-light); }
 
 .services, .concerns { padding: 120px clamp(24px, 7vw, 110px); background: var(--navy); }
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 8vw; align-items: end; margin-bottom: 60px; }
@@ -82,6 +84,10 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .service-pricing > div { min-height: 50px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.68); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
 .service-pricing strong { color: var(--gold-light); font-family: var(--font-heading); font-size: 1.5rem; font-weight: 500; letter-spacing: 0; }
 .service-card > a { margin-top: 28px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.13); color: var(--gold-light); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; display: flex; justify-content: space-between; }
+.services.section-light { background: var(--cream); color: var(--ink); }
+.services.section-light .section-heading > p { color: #607080; }
+.services.section-light .section-kicker.light { color: #5f7080; }
+.services.section-light .service-card { color: var(--white); border-color: rgba(16,35,59,.12); background: linear-gradient(145deg, #08213d, #03162f); box-shadow: 0 24px 55px rgba(3,22,47,.12); }
 
 .approach-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 10vw; }
 .approach-sticky { position: sticky; top: 130px; align-self: start; }
@@ -90,6 +96,11 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .approach-list article > span { color: var(--gold); font-size: .73rem; font-weight: 700; }
 .approach-list h3 { font-size: 2.3rem; color: var(--ink); }
 .approach-list p { color: #607080; }
+.approach .eyebrow.dark { color: var(--glass); }
+.approach h2 em { color: var(--gold-light); }
+.approach .approach-list article { border-color: rgba(255,255,255,.16); }
+.approach .approach-list h3 { color: var(--white); }
+.approach .approach-list p { color: rgba(255,255,255,.66); }
 
 .section-heading.compact { margin-bottom: 40px; }
 .concern-list { border-top: 1px solid rgba(255,255,255,.16); }
@@ -117,6 +128,12 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .reviews .review-heading p { color: rgba(255,255,255,.63); }
 .reviews .review-card { border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.045); }
 .reviews .review-card figcaption { color: rgba(255,255,255,.58); }
+.reviews.section-light { background: var(--cream); color: var(--ink); }
+.reviews.section-light h2 em { color: #9a7436; }
+.reviews.section-light .section-kicker.light { color: #5f7080; }
+.reviews.section-light .review-heading p { color: #607080; }
+.reviews.section-light .review-card { color: var(--white); border-color: rgba(16,35,59,.12); background: linear-gradient(145deg, #08213d, #03162f); box-shadow: 0 20px 45px rgba(3,22,47,.11); }
+.reviews.section-light .review-card figcaption { color: rgba(255,255,255,.6); }
 
 .about { padding: 120px clamp(24px, 7vw, 110px); background: #071c35; }
 .team-heading { display: grid; grid-template-columns: 1fr .65fr; align-items: end; gap: 30px 8vw; margin-bottom: 65px; }
@@ -138,6 +155,10 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .team-placeholder { min-height: 245px; display: grid; place-items: center; background: radial-gradient(circle at 50% 42%, rgba(135,191,195,.18), transparent 42%), var(--navy); border-bottom: 1px solid rgba(255,255,255,.12); }
 .team-placeholder span { width: 98px; height: 98px; display: grid; place-items: center; border: 1px solid rgba(196,154,75,.55); border-radius: 50%; color: var(--gold-light); font-family: var(--font-heading); font-size: 4rem; }
 .coming-soon-label { display: inline-block; margin-top: 20px; color: var(--gold-light); font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.about.section-light { background: var(--cream); color: var(--ink); }
+.about.section-light .section-kicker.light { color: #5f7080; }
+.about.section-light .team-heading > p { color: #607080; }
+.about.section-light .team-card { color: var(--white); border-color: rgba(16,35,59,.12); background: linear-gradient(145deg, #08213d, #03162f); box-shadow: 0 24px 55px rgba(3,22,47,.12); }
 
 .booking { position: relative; overflow: hidden; text-align: center; padding: 140px 24px; background: var(--cream); color: var(--ink); }
 .booking::before, .booking::after { content: ""; position: absolute; width: 500px; height: 150px; border: 1px solid rgba(196,154,75,.35); border-radius: 50%; }
