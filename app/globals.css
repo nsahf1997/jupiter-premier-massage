@@ -87,7 +87,20 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .services.section-light { background: var(--cream); color: var(--ink); }
 .services.section-light .section-heading > p { color: #607080; }
 .services.section-light .section-kicker.light { color: #5f7080; }
-.services.section-light .service-card { color: var(--white); border-color: rgba(16,35,59,.12); background: linear-gradient(145deg, #08213d, #03162f); box-shadow: 0 24px 55px rgba(3,22,47,.12); }
+.services.section-light .service-card { color: var(--ink); border-color: #bdcfce; background: linear-gradient(145deg, #e2eceb, #d2e0df); box-shadow: 0 24px 55px rgba(3,22,47,.09); }
+.services.section-light .service-card:hover { border-color: #9a7436; }
+.services.section-light .service-topline,
+.services.section-light .service-pricing,
+.services.section-light .service-pricing > div,
+.services.section-light .service-card > a { border-color: rgba(16,35,59,.16); }
+.services.section-light .service-topline { color: #607078; }
+.services.section-light .service-topline span:first-child,
+.services.section-light .service-pricing strong,
+.services.section-light .service-card > a { color: #8e6a2f; }
+.services.section-light .card-eyebrow { color: #376d76; }
+.services.section-light .service-card > p:not(.card-eyebrow),
+.services.section-light .service-pricing > div { color: #526571; }
+.services.section-light .service-card li { color: #315f68; border-color: rgba(49,95,104,.28); }
 
 .approach-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 10vw; }
 .approach-sticky { position: sticky; top: 130px; align-self: start; }
@@ -132,8 +145,8 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .reviews.section-light h2 em { color: #9a7436; }
 .reviews.section-light .section-kicker.light { color: #5f7080; }
 .reviews.section-light .review-heading p { color: #607080; }
-.reviews.section-light .review-card { color: var(--white); border-color: rgba(16,35,59,.12); background: linear-gradient(145deg, #08213d, #03162f); box-shadow: 0 20px 45px rgba(3,22,47,.11); }
-.reviews.section-light .review-card figcaption { color: rgba(255,255,255,.6); }
+.reviews.section-light .review-card { color: var(--ink); border-color: #bdcfce; background: linear-gradient(145deg, #e2eceb, #d2e0df); box-shadow: 0 20px 45px rgba(3,22,47,.08); }
+.reviews.section-light .review-card figcaption { color: #5d7078; }
 
 .about { padding: 120px clamp(24px, 7vw, 110px); background: #071c35; }
 .team-heading { display: grid; grid-template-columns: 1fr .65fr; align-items: end; gap: 30px 8vw; margin-bottom: 65px; }
@@ -158,7 +171,9 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .about.section-light { background: var(--cream); color: var(--ink); }
 .about.section-light .section-kicker.light { color: #5f7080; }
 .about.section-light .team-heading > p { color: #607080; }
-.about.section-light .team-card { color: var(--white); border-color: rgba(16,35,59,.12); background: linear-gradient(145deg, #08213d, #03162f); box-shadow: 0 24px 55px rgba(3,22,47,.12); }
+.about.section-light .team-card { color: var(--ink); border-color: #a8c0c2; background: linear-gradient(145deg, #c5d8d9, #b4ccce); box-shadow: 0 24px 55px rgba(3,22,47,.1); }
+.about.section-light .team-copy > p:not(.card-eyebrow) { color: #445b66; }
+.about.section-light .team-copy .text-link { color: #7e5e2b; }
 
 .booking { position: relative; overflow: hidden; text-align: center; padding: 140px 24px; background: var(--cream); color: var(--ink); }
 .booking::before, .booking::after { content: ""; position: absolute; width: 500px; height: 150px; border: 1px solid rgba(196,154,75,.35); border-radius: 50%; }
