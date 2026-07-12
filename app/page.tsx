@@ -21,6 +21,7 @@ const services = [
     description:
       "A calming, full-body session designed to ease muscular tension, settle the nervous system, and create space to recharge.",
     focus: ["Stress reduction", "Full-body relaxation", "Muscular fatigue"],
+    pricing: [{ duration: "60 minutes", price: "$100" }, { duration: "90 minutes", price: "$145" }],
   },
   {
     number: "02",
@@ -29,6 +30,7 @@ const services = [
     description:
       "Focused therapeutic work tailored to areas of discomfort, limited mobility, overuse, and the demands of an active lifestyle.",
     focus: ["Targeted tension", "Mobility support", "Athletic recovery"],
+    pricing: [{ duration: "60 minutes", price: "$115" }, { duration: "90 minutes", price: "$160" }],
   },
 ];
 
@@ -87,9 +89,9 @@ export default function Home() {
           />
         </div>
         <div className="hero-stats" aria-label="Practice highlights">
-          <div><strong>60 &amp; 90</strong><span>Minute sessions</span></div>
-          <div><strong>2</strong><span>Focused services</span></div>
           <div><strong>Personal</strong><span>Care tailored to you</span></div>
+          <div><strong>2</strong><span>Focused services</span></div>
+          <div><strong>60 &amp; 90</strong><span>Minute options</span></div>
         </div>
       </section>
 
@@ -130,6 +132,11 @@ export default function Home() {
               <ul>
                 {service.focus.map((item) => <li key={item}>{item}</li>)}
               </ul>
+              <div className="service-pricing" aria-label={`${service.title} pricing`}>
+                {service.pricing.map((option) => (
+                  <div key={option.duration}><span>{option.duration}</span><strong>{option.price}</strong></div>
+                ))}
+              </div>
               <a href={BOOKING_URL}>Book this service <span aria-hidden="true">→</span></a>
             </article>
           ))}
@@ -219,8 +226,8 @@ export default function Home() {
             <div className="team-copy">
               <p className="card-eyebrow">Licensed Massage Therapist</p>
               <h3>Amber Womack</h3>
-              <p>With six years of experience as a Licensed Massage Therapist, Amber specializes in therapeutic and deep-tissue massage. Her expertise also includes cupping and prenatal massage, supporting a comprehensive approach to wellness.</p>
-              <p>Following a session with Amber, clients can expect to leave feeling revitalized and prepared for whatever lies ahead.</p>
+              <p>Amber is passionate about helping clients feel their best through thoughtful, individualized care. With a background in psychology and over six years of experience as a massage therapist, she takes a holistic approach that recognizes the connection between physical and emotional well-being.</p>
+              <p>Amber is dedicated to creating a welcoming, relaxing environment where clients can find relief from pain, reduce stress, and support their overall health and recovery.</p>
             </div>
           </article>
         </div>
