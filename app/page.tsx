@@ -90,27 +90,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="purpose section-light">
-        <div className="section-kicker"><span>01</span> Why Jupiter Premier</div>
-        <div className="purpose-grid">
-          <h2>Massage with<br /><em>a purpose.</em></h2>
-          <div>
-            <p className="large-copy">
-              Your session should do more than follow a routine. It should meet
-              you where you are and support where you want to go.
-            </p>
-            <p className="large-copy">
-              At Jupiter Premier, thoughtful assessment and skilled therapeutic
-              work come together in a calm, professional setting. Every session
-              is shaped around your preferences, comfort, and goals.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="services" id="services">
         <div className="section-heading">
-          <div className="section-kicker light"><span>02</span> Services</div>
+          <div className="section-kicker light"><span>01</span> Services</div>
           <h2>Focused care.<br /><em>Meaningful results.</em></h2>
           <p>Choose the experience that best matches what your body needs today.</p>
         </div>
@@ -138,24 +120,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="approach section-light">
-        <div className="section-kicker"><span>03</span> Our approach</div>
-        <div className="approach-grid">
-          <div className="approach-sticky">
-            <p className="eyebrow dark">Therapeutic care, thoughtfully delivered</p>
-            <h2>Built around<br /><em>your body.</em></h2>
-          </div>
-          <div className="approach-list">
-            <article><span>01</span><div><h3>Listen first</h3><p>We begin with your goals, preferences, and how you’re feeling that day—without collecting sensitive medical information online.</p></div></article>
-            <article><span>02</span><div><h3>Customize the work</h3><p>Pressure, pace, techniques, and areas of focus are adapted throughout your session rather than dictated by a rigid routine.</p></div></article>
-            <article><span>03</span><div><h3>Support what matters</h3><p>Sessions may focus on pain relief, improved mobility, stress reduction, athletic recovery, or simply helping you feel more at ease.</p></div></article>
+      <section className="purpose section-light">
+        <div className="section-kicker"><span>02</span> Why Jupiter Premier</div>
+        <div className="purpose-grid">
+          <h2>Massage with<br /><em>a purpose.</em></h2>
+          <div>
+            <p className="large-copy">
+              Your session should do more than follow a routine. It should meet
+              you where you are and support where you want to go.
+            </p>
+            <p className="large-copy">
+              At Jupiter Premier, thoughtful assessment and skilled therapeutic
+              work come together in a calm, professional setting. Every session
+              is shaped around your preferences, comfort, and goals.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="about" id="about">
         <div className="team-heading">
-          <div className="section-kicker light"><span>04</span> Our team</div>
+          <div className="section-kicker light"><span>03</span> Our team</div>
           <h2>Experience meets<br /><em>intention.</em></h2>
           <p>Meet the people behind the personalized care at Jupiter Premier.</p>
         </div>
@@ -199,21 +184,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="concerns section-light">
-        <div className="section-heading compact">
-          <div className="section-kicker"><span>05</span> Common reasons clients visit</div>
-          <h2>What can we<br /><em>work on?</em></h2>
+      <section className="approach section-light">
+        <div className="section-kicker"><span>04</span> Our approach</div>
+        <div className="approach-grid">
+          <div className="approach-sticky">
+            <p className="eyebrow dark">Therapeutic care, thoughtfully delivered</p>
+            <h2>Built around<br /><em>your body.</em></h2>
+          </div>
+          <div className="approach-list">
+            <article><span>01</span><div><h3>Listen first</h3><p>We begin with your goals, preferences, and how you’re feeling that day—without collecting sensitive medical information online.</p></div></article>
+            <article><span>02</span><div><h3>Customize the work</h3><p>Pressure, pace, techniques, and areas of focus are adapted throughout your session rather than dictated by a rigid routine.</p></div></article>
+            <article><span>03</span><div><h3>Support what matters</h3><p>Sessions may focus on pain relief, improved mobility, stress reduction, athletic recovery, or simply helping you feel more at ease.</p></div></article>
+          </div>
         </div>
-        <div className="concern-list">
-          {concerns.map((concern, index) => (
-            <div key={concern}><span>{String(index + 1).padStart(2, "0")}</span><p>{concern}</p><b aria-hidden="true">↗</b></div>
-          ))}
-        </div>
-        <p className="disclaimer">Massage therapy is not a substitute for medical care, diagnosis, or treatment. Individual experiences vary.</p>
       </section>
 
       <section className="reviews" aria-labelledby="reviews-heading">
-        <div className="section-kicker light"><span>06</span> Client reviews</div>
+        <div className="section-kicker light"><span>05</span> Client reviews</div>
         <div className="review-heading">
           <h2 id="reviews-heading">Trusted by clients.<br /><em>Felt in every session.</em></h2>
           <p>Real words from people who value thoughtful, professional bodywork.</p>
@@ -227,6 +214,19 @@ export default function Home() {
             </figure>
           ))}
         </div>
+      </section>
+
+      <section className="concerns section-light">
+        <div className="section-heading compact">
+          <div className="section-kicker"><span>06</span> Common reasons clients visit</div>
+          <h2>What can we<br /><em>work on?</em></h2>
+        </div>
+        <div className="concern-list">
+          {concerns.map((concern, index) => (
+            <div key={concern}><span>{String(index + 1).padStart(2, "0")}</span><p>{concern}</p><b aria-hidden="true">↗</b></div>
+          ))}
+        </div>
+        <p className="disclaimer">Massage therapy is not a substitute for medical care, diagnosis, or treatment. Individual experiences vary.</p>
       </section>
 
       <section className="booking" id="booking">
