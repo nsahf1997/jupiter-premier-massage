@@ -112,18 +112,18 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .team-heading { display: grid; grid-template-columns: 1fr .65fr; align-items: end; gap: 30px 8vw; margin-bottom: 65px; }
 .team-heading .section-kicker { grid-column: 1 / -1; margin-bottom: 20px; }
 .team-heading > p { max-width: 430px; color: rgba(255,255,255,.6); }
-.team-grid { display: grid; grid-template-columns: 1.55fr .75fr; gap: 18px; align-items: stretch; }
+.team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
 .team-card { border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.035); }
-.team-card-featured { display: grid; grid-template-columns: 300px 1fr; align-items: center; }
-.team-photo { width: 225px; height: 225px; margin: 36px auto; overflow: hidden; border: 2px solid rgba(196,154,75,.65); border-radius: 50%; background: var(--navy-3); box-shadow: 0 22px 45px rgba(0,0,0,.24); }
+.team-card-featured { display: flex; flex-direction: column; }
+.team-photo { width: 190px; height: 190px; margin: 42px auto 0; overflow: hidden; border: 2px solid rgba(196,154,75,.65); border-radius: 50%; background: var(--navy-3); box-shadow: 0 22px 45px rgba(0,0,0,.24); }
 .team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; filter: saturate(.82) contrast(1.02); }
-.team-copy { padding: clamp(28px, 4vw, 50px); }
+.team-copy { padding: clamp(28px, 4vw, 50px); display: flex; flex: 1; flex-direction: column; }
 .team-copy .card-eyebrow { margin: 0 0 12px; }
 .team-copy h3 { font-size: clamp(2.8rem, 4.5vw, 4.5rem); }
 .team-copy > p:not(.card-eyebrow) { color: rgba(255,255,255,.62); }
-.team-copy .text-link { display: inline-block; margin-top: 18px; }
+.team-copy .text-link { align-self: flex-start; display: inline-block; margin-top: auto; padding-top: 18px; }
 .team-card-coming-soon { display: flex; flex-direction: column; min-height: 100%; }
-.team-photo-secondary { width: 170px; height: 170px; min-height: 0; flex: 0 0 auto; margin: 42px auto 0; }
+.team-photo-secondary { min-height: 0; flex: 0 0 auto; }
 .team-photo-secondary img { object-position: 38% 34%; }
 .team-placeholder { min-height: 245px; display: grid; place-items: center; background: radial-gradient(circle at 50% 42%, rgba(135,191,195,.18), transparent 42%), var(--navy); border-bottom: 1px solid rgba(255,255,255,.12); }
 .team-placeholder span { width: 98px; height: 98px; display: grid; place-items: center; border: 1px solid rgba(196,154,75,.55); border-radius: 50%; color: var(--gold-light); font-family: var(--font-heading); font-size: 4rem; }
@@ -189,7 +189,6 @@ footer { padding: 75px clamp(24px, 7vw, 110px) 30px; display: grid; grid-templat
   .review-track { grid-auto-columns: 88%; }
   .review-card { min-height: 390px; padding: 28px; }
   .about { padding: 82px 22px; }
-  .team-card-featured { grid-template-columns: 1fr; }
   .team-photo { width: 185px; height: 185px; margin: 34px auto 0; }
   .booking { padding: 100px 22px; }
   footer { grid-template-columns: 1fr 1fr; padding: 65px 22px 28px; }

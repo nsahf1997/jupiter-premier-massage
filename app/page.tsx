@@ -49,7 +49,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
-          <a href="#about">About</a>
+          <a href="#about">Meet Our Team</a>
           <a className="button button-small" href={BOOKING_URL}>Book Now</a>
         </nav>
         <div className="mobile-actions">
@@ -59,7 +59,7 @@ export default function Home() {
             <nav aria-label="Mobile navigation">
               <a href="#home">Home</a>
               <a href="#services">Services</a>
-              <a href="#about">About</a>
+              <a href="#about">Meet Our Team</a>
             </nav>
           </details>
         </div>
@@ -153,39 +153,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="concerns">
-        <div className="section-heading compact">
-          <div className="section-kicker light"><span>04</span> Common reasons clients visit</div>
-          <h2>What can we<br /><em>work on?</em></h2>
-        </div>
-        <div className="concern-list">
-          {concerns.map((concern, index) => (
-            <div key={concern}><span>{String(index + 1).padStart(2, "0")}</span><p>{concern}</p><b aria-hidden="true">↗</b></div>
-          ))}
-        </div>
-        <p className="disclaimer">Massage therapy is not a substitute for medical care, diagnosis, or treatment. Individual experiences vary.</p>
-      </section>
-
-      <section className="reviews section-light" aria-labelledby="reviews-heading">
-        <div className="section-kicker"><span>05</span> Client reviews</div>
-        <div className="review-heading">
-          <h2 id="reviews-heading">Trusted by clients.<br /><em>Felt in every session.</em></h2>
-          <p>Real words from people who value thoughtful, professional bodywork.</p>
-        </div>
-        <div className="review-track">
-          {reviews.map((review, index) => (
-            <figure className="review-card" key={`${review.author}-${index}`}>
-              <div className="stars" aria-label="Five star review">★★★★★</div>
-              <blockquote>“{review.quote}”</blockquote>
-              <figcaption>— {review.author}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
       <section className="about" id="about">
         <div className="team-heading">
-          <div className="section-kicker light"><span>06</span> Our team</div>
+          <div className="section-kicker light"><span>04</span> Our team</div>
           <h2>Experience meets<br /><em>intention.</em></h2>
           <p>Meet the people behind the personalized care at Jupiter Premier.</p>
         </div>
@@ -223,8 +193,39 @@ export default function Home() {
               <h3>Amber Womack</h3>
               <p>Amber is passionate about helping clients feel their best through thoughtful, individualized care. With a background in psychology and over six years of experience as a massage therapist, she takes a holistic approach that recognizes the connection between physical and emotional well-being.</p>
               <p>Amber is dedicated to creating a welcoming, relaxing environment where clients can find relief from pain, reduce stress, and support their overall health and recovery.</p>
+              <a className="text-link gold" href={BOOKING_URL}>Work with Amber <span aria-hidden="true">→</span></a>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className="concerns">
+        <div className="section-heading compact">
+          <div className="section-kicker light"><span>05</span> Common reasons clients visit</div>
+          <h2>What can we<br /><em>work on?</em></h2>
+        </div>
+        <div className="concern-list">
+          {concerns.map((concern, index) => (
+            <div key={concern}><span>{String(index + 1).padStart(2, "0")}</span><p>{concern}</p><b aria-hidden="true">↗</b></div>
+          ))}
+        </div>
+        <p className="disclaimer">Massage therapy is not a substitute for medical care, diagnosis, or treatment. Individual experiences vary.</p>
+      </section>
+
+      <section className="reviews section-light" aria-labelledby="reviews-heading">
+        <div className="section-kicker"><span>06</span> Client reviews</div>
+        <div className="review-heading">
+          <h2 id="reviews-heading">Trusted by clients.<br /><em>Felt in every session.</em></h2>
+          <p>Real words from people who value thoughtful, professional bodywork.</p>
+        </div>
+        <div className="review-track">
+          {reviews.map((review, index) => (
+            <figure className="review-card" key={`${review.author}-${index}`}>
+              <div className="stars" aria-label="Five star review">★★★★★</div>
+              <blockquote>“{review.quote}”</blockquote>
+              <figcaption>— {review.author}</figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 
@@ -244,7 +245,7 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Explore</h3>
-          <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href={BOOKING_URL}>Book Now</a>
+          <a href="#home">Home</a><a href="#services">Services</a><a href="#about">Meet Our Team</a><a href={BOOKING_URL}>Book Now</a>
         </div>
         <div className="footer-column">
           <h3>Services</h3>
