@@ -68,13 +68,13 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 8vw; align-items: end; margin-bottom: 60px; }
 .section-heading .section-kicker { grid-column: 1 / -1; margin-bottom: 35px; }
 .section-heading > p { max-width: 430px; color: rgba(255,255,255,.63); align-self: end; }
-.service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .service-card { min-height: 560px; padding: clamp(28px, 4vw, 54px); border: 1px solid rgba(255,255,255,.14); background: linear-gradient(145deg, rgba(255,255,255,.05), rgba(255,255,255,.015)); transition: border-color .25s, transform .25s; display: flex; flex-direction: column; }
 .service-card:hover { border-color: rgba(196,154,75,.7); transform: translateY(-4px); }
 .service-topline { display: flex; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.45); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; }
 .service-topline span:first-child { color: var(--gold-light); }
 .card-eyebrow { margin: 60px 0 10px; color: var(--glass); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.service-card h3 { font-size: clamp(2.5rem, 4vw, 4.4rem); }
+.service-card h3 { font-size: clamp(2.2rem, 3.2vw, 3.8rem); }
 .service-card > p:not(.card-eyebrow) { color: rgba(255,255,255,.64); max-width: 560px; }
 .service-card ul { list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; }
 .service-card li { padding: 7px 11px; border: 1px solid rgba(135,191,195,.26); color: #b7d8da; font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; }
@@ -170,6 +170,7 @@ footer { padding: 75px clamp(24px, 7vw, 110px) 30px; display: grid; grid-templat
   .hero-mark { position: absolute; right: -15%; top: 18%; width: 58vw; opacity: .18; }
   .hero-stats { margin-top: 80px; }
   .purpose-grid, .section-heading, .approach-grid, .review-heading { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 520px; }
   .approach-sticky { position: static; }
   .review-track { grid-auto-columns: minmax(320px, 75%); }

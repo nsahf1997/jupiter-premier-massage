@@ -25,12 +25,21 @@ const services = [
   },
   {
     number: "02",
+    title: "Hybrid Massage",
+    eyebrow: "The best of both worlds",
+    description:
+      "A balanced session that blends restorative relaxation with focused therapeutic work wherever your body needs extra attention.",
+    focus: ["Relaxation", "Focused attention", "Everyday recovery"],
+    pricing: [{ duration: "60 minutes", price: "$115" }, { duration: "90 minutes", price: "$160" }],
+  },
+  {
+    number: "03",
     title: "Pain Relief Massage",
     eyebrow: "Move with more ease",
     description:
       "Focused therapeutic work tailored to areas of discomfort, limited mobility, overuse, and the demands of an active lifestyle.",
     focus: ["Targeted tension", "Mobility support", "Athletic recovery"],
-    pricing: [{ duration: "60 minutes", price: "$115" }, { duration: "90 minutes", price: "$160" }],
+    pricing: [{ duration: "60 minutes", price: "$130" }, { duration: "90 minutes", price: "$175" }],
   },
 ];
 
@@ -94,7 +103,7 @@ export default function Home() {
         <div className="section-heading">
           <div className="section-kicker light"><span>01</span> Services</div>
           <h2>Focused care.<br /><em>Meaningful results.</em></h2>
-          <p>Choose the experience that best matches what your body needs today.</p>
+          <p>Choose relaxation, focused pain relief, or a balanced blend of both.</p>
         </div>
         <div className="service-grid">
           {services.map((service) => (
@@ -249,7 +258,7 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Services</h3>
-          <a href="#services">Relaxation Massage</a><a href="#services">Pain Relief Massage</a>
+          <a href="#services">Relaxation Massage</a><a href="#services">Hybrid Massage</a><a href="#services">Pain Relief Massage</a>
         </div>
         <div className="footer-column">
           <h3>Visit</h3>
