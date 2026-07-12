@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     template: "%s | Jupiter Premier Massage & Bodywork",
   },
   description:
-    "Premium relaxation massage and pain relief bodywork in Jupiter, Florida. Customized 60- and 90-minute therapeutic sessions with Licensed Massage Therapist Nick Sahf.",
+    "Premium relaxation massage and pain relief massage in Jupiter, Florida. Customized 60- and 90-minute therapeutic sessions with Licensed Massage Therapist Nick Sahf.",
   keywords: [
     "massage Jupiter FL",
     "therapeutic massage Jupiter Florida",
     "sports massage Jupiter",
-    "pain relief bodywork",
+    "pain relief massage",
     "relaxation massage",
   ],
   icons: {

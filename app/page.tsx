@@ -25,7 +25,7 @@ const services = [
   },
   {
     number: "02",
-    title: "Pain Relief Bodywork",
+    title: "Pain Relief Massage",
     eyebrow: "Move with more ease",
     description:
       "Focused therapeutic work tailored to areas of discomfort, limited mobility, overuse, and the demands of an active lifestyle.",
@@ -249,7 +249,7 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Services</h3>
-          <a href="#services">Relaxation Massage</a><a href="#services">Pain Relief Bodywork</a>
+          <a href="#services">Relaxation Massage</a><a href="#services">Pain Relief Massage</a>
         </div>
         <div className="footer-column">
           <h3>Visit</h3>

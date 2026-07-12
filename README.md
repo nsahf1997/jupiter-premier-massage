@@ -33,4 +33,4 @@ Run `npm run build` to create a production build. The project is ready to import
 
 - Do not collect health or medical information through this marketing site.
 - Avoid guarantees or medical claims when updating service copy.
-- Keep the service menu limited to Relaxation Massage and Pain Relief Bodywork until the business is ready to add more offerings.
+- Keep the service menu limited to Relaxation Massage and Pain Relief Massage until the business is ready to add more offerings.
