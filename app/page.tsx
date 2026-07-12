@@ -49,7 +49,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
-          <a href="#about">Meet Our Team</a>
+          <a href="#about">About Us</a>
           <a className="button button-small" href={BOOKING_URL}>Book Now</a>
         </nav>
         <div className="mobile-actions">
@@ -59,7 +59,7 @@ export default function Home() {
             <nav aria-label="Mobile navigation">
               <a href="#home">Home</a>
               <a href="#services">Services</a>
-              <a href="#about">Meet Our Team</a>
+              <a href="#about">About Us</a>
             </nav>
           </details>
         </div>
@@ -245,7 +245,7 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Explore</h3>
-          <a href="#home">Home</a><a href="#services">Services</a><a href="#about">Meet Our Team</a><a href={BOOKING_URL}>Book Now</a>
+          <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href={BOOKING_URL}>Book Now</a>
         </div>
         <div className="footer-column">
           <h3>Services</h3>
