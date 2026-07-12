@@ -88,11 +88,6 @@ export default function Home() {
             height="1254"
           />
         </div>
-        <div className="hero-stats" aria-label="Practice highlights">
-          <div><strong>Personal</strong><span>Care tailored to you</span></div>
-          <div><strong>2</strong><span>Focused services</span></div>
-          <div><strong>60 &amp; 90</strong><span>Minute options</span></div>
-        </div>
       </section>
 
       <section className="purpose section-light">
