@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services" id="services">
+      <section className="services section-light" id="services">
         <div className="section-heading">
           <div className="section-kicker light"><span>01</span> Services</div>
           <h2>Focused care.<br /><em>Meaningful results.</em></h2>
@@ -129,8 +129,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="purpose section-light">
-        <div className="section-kicker"><span>02</span> Why Jupiter Premier</div>
+      <section className="purpose">
+        <div className="section-kicker light"><span>02</span> Why Jupiter Premier</div>
         <div className="purpose-grid">
           <h2>Massage with<br /><em>a purpose.</em></h2>
           <div>
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about" id="about">
+      <section className="about section-light" id="about">
         <div className="team-heading">
           <div className="section-kicker light"><span>03</span> Our team</div>
           <h2>Experience meets<br /><em>intention.</em></h2>
@@ -193,8 +193,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="approach section-light">
-        <div className="section-kicker"><span>04</span> Our approach</div>
+      <section className="approach">
+        <div className="section-kicker light"><span>04</span> Our approach</div>
         <div className="approach-grid">
           <div className="approach-sticky">
             <p className="eyebrow dark">Therapeutic care, thoughtfully delivered</p>
@@ -208,7 +208,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="reviews" aria-labelledby="reviews-heading">
+      <section className="reviews section-light" aria-labelledby="reviews-heading">
         <div className="section-kicker light"><span>05</span> Client reviews</div>
         <div className="review-heading">
           <h2 id="reviews-heading">Trusted by clients.<br /><em>Felt in every session.</em></h2>
@@ -225,9 +225,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="concerns section-light">
+      <section className="concerns">
         <div className="section-heading compact">
-          <div className="section-kicker"><span>06</span> Common reasons clients visit</div>
+          <div className="section-kicker light"><span>06</span> Common reasons clients visit</div>
           <h2>What can we<br /><em>work on?</em></h2>
         </div>
         <div className="concern-list">
