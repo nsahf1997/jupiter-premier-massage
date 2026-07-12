@@ -199,9 +199,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="concerns">
+      <section className="concerns section-light">
         <div className="section-heading compact">
-          <div className="section-kicker light"><span>05</span> Common reasons clients visit</div>
+          <div className="section-kicker"><span>05</span> Common reasons clients visit</div>
           <h2>What can we<br /><em>work on?</em></h2>
         </div>
         <div className="concern-list">
@@ -212,8 +212,8 @@ export default function Home() {
         <p className="disclaimer">Massage therapy is not a substitute for medical care, diagnosis, or treatment. Individual experiences vary.</p>
       </section>
 
-      <section className="reviews section-light" aria-labelledby="reviews-heading">
-        <div className="section-kicker"><span>06</span> Client reviews</div>
+      <section className="reviews" aria-labelledby="reviews-heading">
+        <div className="section-kicker light"><span>06</span> Client reviews</div>
         <div className="review-heading">
           <h2 id="reviews-heading">Trusted by clients.<br /><em>Felt in every session.</em></h2>
           <p>Real words from people who value thoughtful, professional bodywork.</p>
