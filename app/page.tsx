@@ -37,7 +37,7 @@ const services = [
     title: "Pain Relief Massage",
     eyebrow: "Move with more ease",
     description:
-      "Focused therapeutic work tailored to areas of discomfort, limited mobility, overuse, and the demands of an active lifestyle.",
+      "A therapeutic session using deeper pressure and targeted techniques to address stubborn muscular tension, limited mobility, overuse, and the demands of an active lifestyle.",
     focus: ["Targeted tension", "Mobility support", "Athletic recovery"],
     pricing: [{ duration: "60 minutes", price: "$130" }, { duration: "90 minutes", price: "$175" }],
   },
