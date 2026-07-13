@@ -28,7 +28,7 @@ const services = [
     title: "Hybrid Massage",
     eyebrow: "The best of both worlds",
     description:
-      "A balanced session that blends restorative full-body relaxation with focused therapeutic work wherever your body needs extra attention. It is ideal when you want to unwind while also addressing specific tension, soreness, or mobility concerns.",
+      "A balanced session blending full-body relaxation with focused therapeutic work for areas that need extra attention—ideal for unwinding while addressing specific tension or soreness.",
     focus: ["Relaxation", "Focused attention", "Everyday recovery"],
     pricing: [{ duration: "60 minutes", price: "$115" }, { duration: "90 minutes", price: "$160" }],
   },
