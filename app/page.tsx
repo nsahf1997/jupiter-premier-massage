@@ -16,7 +16,7 @@ const concerns = [
 const services = [
   {
     number: "01",
-    title: "Relaxation",
+    title: "Relaxation Massage",
     eyebrow: "Restore your baseline",
     description:
       "A calming, full-body session designed to ease muscular tension, settle the nervous system, and create space to recharge—ideal when you want to slow down, reset, and leave feeling restored.",
@@ -25,7 +25,7 @@ const services = [
   },
   {
     number: "02",
-    title: "Hybrid",
+    title: "Hybrid Massage",
     eyebrow: "The best of both worlds",
     description:
       "A balanced session blending full-body relaxation with focused therapeutic work for areas that need extra attention—ideal for unwinding while addressing specific tension or soreness.",
@@ -34,7 +34,7 @@ const services = [
   },
   {
     number: "03",
-    title: "Pain Relief",
+    title: "Pain Relief Massage",
     eyebrow: "Move with more ease",
     description:
       "A therapeutic session using deeper pressure and targeted techniques to address stubborn muscular tension, limited mobility, overuse, and the demands of an active lifestyle.",
@@ -258,7 +258,7 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Services</h3>
-          <a href="#services">Relaxation</a><a href="#services">Hybrid</a><a href="#services">Pain Relief</a>
+          <a href="#services">Relaxation Massage</a><a href="#services">Hybrid Massage</a><a href="#services">Pain Relief Massage</a>
         </div>
         <div className="footer-column">
           <h3>Visit</h3>
