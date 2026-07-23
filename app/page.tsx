@@ -1,6 +1,100 @@
 import reviews from "../content/reviews.json";
 
 const BOOKING_URL = "#booking";
+const SITE_URL = "https://jupiter-premier-massage.ambermwomack.chatgpt.site";
+
+const serviceAreas = [
+  "Jupiter",
+  "Tequesta",
+  "Palm Beach Gardens",
+  "Juno Beach",
+  "Hobe Sound",
+];
+
+const faqs = [
+  {
+    question: "What areas does Jupiter Premier Massage serve?",
+    answer: "Jupiter Premier Massage & Bodywork serves clients in Jupiter, Florida and nearby communities including Tequesta, Palm Beach Gardens, Juno Beach, and Hobe Sound.",
+  },
+  {
+    question: "What types of massage are available?",
+    answer: "Services include relaxation massage, hybrid massage that blends relaxation with focused therapeutic work, and pain relief massage for stubborn muscular tension, limited mobility, overuse, and athletic recovery.",
+  },
+  {
+    question: "Do you offer sports massage in Jupiter?",
+    answer: "Yes. Pain relief and hybrid sessions can be customized to support athletic recovery, mobility, and areas of tension related to training or an active lifestyle.",
+  },
+  {
+    question: "How long are massage appointments?",
+    answer: "Each massage service is available as either a 60-minute or 90-minute session.",
+  },
+  {
+    question: "Is every massage customized?",
+    answer: "Yes. Pressure, pace, techniques, and areas of focus are adapted to your goals, preferences, comfort, and how your body feels that day.",
+  },
+];
+
+function structuredData() {
+  return [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: "Jupiter Premier Massage & Bodywork",
+    alternateName: "Jupiter Premier Massage",
+    inLanguage: "en-US",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": ["HealthAndBeautyBusiness", "LocalBusiness"],
+    "@id": `${SITE_URL}/#business`,
+    name: "Jupiter Premier Massage & Bodywork",
+    url: SITE_URL,
+    image: `${SITE_URL}/og.png`,
+    logo: `${SITE_URL}/images/jupiter-premier-logo-dark.png`,
+    description: "Personalized therapeutic massage in Jupiter, Florida for relaxation, pain relief, mobility, and athletic recovery.",
+    priceRange: "$100-$175",
+    areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
+    knowsAbout: [
+      "Relaxation massage",
+      "Pain relief massage",
+      "Sports massage",
+      "Neuromuscular therapy",
+      "Deep tissue massage",
+      "Craniosacral therapy",
+      "Athletic recovery",
+    ],
+    employee: [
+      { "@type": "Person", name: "Nick Sahf", jobTitle: "Licensed Massage Therapist" },
+      { "@type": "Person", name: "Amber Womack", jobTitle: "Licensed Massage Therapist" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Massage therapy services",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.description,
+          areaServed: "Jupiter, Florida",
+          provider: { "@id": `${SITE_URL}/#business` },
+        },
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  },
+  ];
+}
 
 const concerns = [
   "Neck and shoulder tension",
@@ -46,6 +140,10 @@ const services = [
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData()).replace(/</g, "\\u003c") }}
+      />
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Jupiter Premier home">
           <img
@@ -79,10 +177,10 @@ export default function Home() {
         <div className="orb orb-two" aria-hidden="true" />
         <div className="hero-copy">
           <p className="eyebrow">Therapeutic massage in Jupiter, Florida</p>
-          <h1>Relax. Recover.<br /><em>Recharge.</em></h1>
+          <h1>Massage therapy<br />in <em>Jupiter, FL.</em></h1>
           <p className="hero-lede">
-            Premium massage and bodywork tailored to your goals, whether you’re
-            seeking stress relief, pain relief, or ongoing wellness.
+            Relax, recover, and recharge with personalized massage and bodywork
+            for stress relief, pain relief, mobility, and ongoing wellness.
           </p>
           <div className="hero-actions">
             <a className="button" href={BOOKING_URL}>Book Your Session</a>
@@ -221,8 +319,48 @@ export default function Home() {
         <p className="disclaimer">Massage therapy is not a substitute for medical care, diagnosis, or treatment. Individual experiences vary.</p>
       </section>
 
+      <section className="local-seo">
+        <div>
+          <div className="section-kicker light"><span>06</span> Massage near Jupiter, Florida</div>
+          <h2>Local care for<br /><em>the way you move.</em></h2>
+        </div>
+        <div className="local-copy">
+          <p className="large-copy">
+            Looking for a massage therapist in Jupiter, FL? Jupiter Premier
+            offers customized relaxation, therapeutic, and pain relief massage
+            for everyday tension, active lifestyles, and athletic recovery.
+          </p>
+          <p>
+            We welcome clients from Jupiter and nearby Palm Beach and Martin
+            County communities. Every 60- or 90-minute session is adapted to
+            your comfort, pressure preferences, and goals.
+          </p>
+          <ul aria-label="Communities served">
+            {serviceAreas.map((area) => <li key={area}>{area}, FL</li>)}
+          </ul>
+        </div>
+      </section>
+
+      <section className="faq section-light" aria-labelledby="faq-heading">
+        <div className="section-kicker"><span>07</span> Local massage FAQ</div>
+        <div className="faq-grid">
+          <div>
+            <p className="eyebrow dark">Helpful before your session</p>
+            <h2 id="faq-heading">Questions about massage in <em>Jupiter.</em></h2>
+          </div>
+          <div className="faq-list">
+            {faqs.map((faq) => (
+              <details key={faq.question}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="reviews" aria-labelledby="reviews-heading">
-        <div className="section-kicker light"><span>06</span> Client reviews</div>
+        <div className="section-kicker light"><span>08</span> Client reviews</div>
         <div className="review-heading">
           <h2 id="reviews-heading">Trusted by clients.<br /><em>Felt in every session.</em></h2>
           <p>Real words from people who value thoughtful, professional bodywork.</p>
@@ -262,7 +400,7 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Visit</h3>
-          <p>Serving Jupiter, Florida<br />and surrounding communities</p>
+          <p>Serving Jupiter, Tequesta,<br />Palm Beach Gardens, Juno Beach,<br />and Hobe Sound, Florida</p>
           <p>Phone and email coming soon</p>
         </div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Jupiter Premier Massage &amp; Bodywork</span><span>Professional therapeutic massage in Jupiter, FL</span></div>
