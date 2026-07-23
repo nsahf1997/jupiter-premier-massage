@@ -135,6 +135,18 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
 .reviews .review-heading p { color: rgba(255,255,255,.63); }
 .reviews .review-card { border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.045); }
 .reviews .review-card figcaption { color: rgba(255,255,255,.58); }
+.reviews-page { min-height: 100svh; padding: 170px clamp(24px, 7vw, 110px) 120px; background: linear-gradient(155deg, #03162f, #071c35 72%); }
+.reviews-page-intro { display: grid; grid-template-columns: 1fr .65fr; gap: 35px 8vw; align-items: end; margin-bottom: 70px; }
+.reviews-page-intro .section-kicker { grid-column: 1 / -1; margin-bottom: 18px; }
+.reviews-page-intro h1 { font-size: clamp(4.2rem, 8vw, 8rem); }
+.reviews-page-intro h1 em { color: var(--gold-light); font-weight: 400; }
+.reviews-page-intro > p { color: rgba(255,255,255,.65); max-width: 500px; }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.reviews-grid .review-card { min-height: 330px; border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.045); }
+.reviews-grid .review-card figcaption { color: rgba(255,255,255,.58); }
+.reviews-cta { margin-top: 70px; padding: 55px; border: 1px solid rgba(196,154,75,.45); text-align: center; }
+.reviews-cta h2 { font-size: clamp(2.8rem, 5vw, 5rem); }
+.reviews-cta p { color: rgba(255,255,255,.65); margin: 24px auto 30px; }
 
 .about { padding: 120px clamp(24px, 7vw, 110px); background: #071c35; }
 .team-heading { display: grid; grid-template-columns: 1fr .65fr; align-items: end; gap: 30px 8vw; margin-bottom: 65px; }
@@ -188,6 +200,8 @@ footer { padding: 75px clamp(24px, 7vw, 110px) 30px; display: grid; grid-templat
   .hero-mark { position: absolute; right: -15%; top: 18%; width: 58vw; opacity: .18; }
   .hero-stats { margin-top: 80px; }
   .purpose-grid, .section-heading, .approach-grid, .review-heading { grid-template-columns: 1fr; }
+  .reviews-page-intro { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 520px; }
   .approach-sticky { position: static; }
@@ -218,6 +232,11 @@ footer { padding: 75px clamp(24px, 7vw, 110px) 30px; display: grid; grid-templat
   .concern-list p { font-size: 1.45rem; line-height: 1.1; padding: 18px 0; }
   .review-track { grid-auto-columns: 88%; }
   .review-card { min-height: 390px; padding: 28px; }
+  .reviews-page { padding: 130px 22px 82px; }
+  .reviews-page-intro h1 { font-size: clamp(3.6rem, 18vw, 5.8rem); }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .reviews-grid .review-card { min-height: 0; }
+  .reviews-cta { padding: 38px 24px; }
   .about { padding: 82px 22px; }
   .team-photo { width: 185px; height: 185px; margin: 34px auto 0; }
   .booking { padding: 100px 22px; }

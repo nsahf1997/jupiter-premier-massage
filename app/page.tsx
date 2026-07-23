@@ -87,21 +87,21 @@ const services = [
   },
   {
     number: "02",
-    title: "Hybrid Massage",
-    eyebrow: "The best of both worlds",
-    description:
-      "A balanced session blending full-body relaxation with focused therapeutic work for areas that need extra attention—ideal for unwinding while addressing specific tension or soreness.",
-    focus: ["Relaxation", "Focused attention", "Everyday recovery"],
-    pricing: [{ duration: "60 minutes", price: "$115" }, { duration: "90 minutes", price: "$160" }],
-  },
-  {
-    number: "03",
     title: "Pain Relief Massage",
     eyebrow: "Move with more ease",
     description:
       "A therapeutic session using deeper pressure and targeted techniques to address stubborn muscular tension, limited mobility, overuse, and the demands of an active lifestyle.",
     focus: ["Targeted tension", "Mobility support", "Athletic recovery"],
     pricing: [{ duration: "60 minutes", price: "$130" }, { duration: "90 minutes", price: "$175" }],
+  },
+  {
+    number: "03",
+    title: "Hybrid Massage",
+    eyebrow: "The best of both worlds",
+    description:
+      "A balanced session blending full-body relaxation with focused therapeutic work for areas that need extra attention—ideal for unwinding while addressing specific tension or soreness.",
+    focus: ["Relaxation", "Focused attention", "Everyday recovery"],
+    pricing: [{ duration: "60 minutes", price: "$115" }, { duration: "90 minutes", price: "$160" }],
   },
 ];
 
@@ -125,6 +125,7 @@ export default function Home() {
           <a href="#home">Home</a>
           <a href="#services">Services</a>
           <a href="#about">About Us</a>
+          <a href="/reviews">Reviews</a>
           <a className="button button-small" href={BOOKING_URL}>Book Now</a>
         </nav>
         <div className="mobile-actions">
@@ -135,6 +136,7 @@ export default function Home() {
               <a href="#home">Home</a>
               <a href="#services">Services</a>
               <a href="#about">About Us</a>
+              <a href="/reviews">Reviews</a>
             </nav>
           </details>
         </div>
@@ -320,15 +322,15 @@ export default function Home() {
         </div>
         <div className="footer-column">
           <h3>Explore</h3>
-          <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href={BOOKING_URL}>Book Now</a>
+          <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="/reviews">Reviews</a><a href={BOOKING_URL}>Book Now</a>
         </div>
         <div className="footer-column">
           <h3>Services</h3>
-          <a href="#services">Relaxation Massage</a><a href="#services">Hybrid Massage</a><a href="#services">Pain Relief Massage</a>
+          <a href="#services">Relaxation Massage</a><a href="#services">Pain Relief Massage</a><a href="#services">Hybrid Massage</a>
         </div>
         <div className="footer-column">
           <h3>Visit</h3>
-          <p>Serving Jupiter, Florida<br />and surrounding communities</p>
+          <p>Serving Jupiter, Tequesta,<br />Palm Beach Gardens, Juno Beach,<br />and Hobe Sound, Florida</p>
           <p>Phone and email coming soon</p>
         </div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Jupiter Premier Massage &amp; Bodywork</span><span>Professional therapeutic massage in Jupiter, FL</span></div>
