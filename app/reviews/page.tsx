@@ -19,6 +19,10 @@ export default function ReviewsPage() {
             width="1254"
             height="1254"
           />
+          <span className="brand-name" aria-hidden="true">
+            <strong>Jupiter Premier</strong>
+            <small>Massage &amp; Bodywork</small>
+          </span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="/">Home</a>
