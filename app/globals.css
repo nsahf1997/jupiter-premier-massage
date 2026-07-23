@@ -192,8 +192,6 @@ footer { padding: 75px clamp(24px, 7vw, 110px) 30px; display: grid; grid-templat
 .footer-bottom { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 20px; padding-top: 26px; margin-top: 25px; border-top: 1px solid rgba(255,255,255,.1); color: rgba(255,255,255,.36); font-size: .68rem; }
 
 @media (max-width: 900px) {
-  .brand { min-width: 0; width: 90px; flex-basis: 90px; }
-  .brand-name { display: none; }
   .desktop-nav { display: none; }
   .mobile-actions { display: flex; }
   .mobile-nav { display: block; }
@@ -219,8 +217,9 @@ footer { padding: 75px clamp(24px, 7vw, 110px) 30px; display: grid; grid-templat
 
 @media (max-width: 620px) {
   .site-header { height: 80px; }
-  .brand { width: 66px; height: 66px; flex-basis: 66px; }
+  .brand { min-width: 0; width: 66px; height: 66px; flex-basis: 66px; }
   .brand img { width: 62px; height: 62px; }
+  .brand-name { display: none; }
   .mobile-nav nav { top: 86px; }
   .hero { min-height: auto; padding: 128px 22px 55px; }
   h1 { font-size: clamp(4rem, 21vw, 6rem); }
